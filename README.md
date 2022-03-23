@@ -1,3 +1,13 @@
+# Custom Information
+This is the README of my project, the default README created by 
+```js:
+npm init vue@latest
+cd $projectName
+npm install
+npm run dev
+```
+
+However I keep the default README below because has nice information, for example recommended extension *Volar* instead *Vetur*
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.

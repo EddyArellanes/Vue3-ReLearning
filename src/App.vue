@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { reactive } from 'vue';
-  const obj = reactive({ count: 1});
+  const obj = reactive({ count: 1, list: ['suscribed!', 'ho']});
   const increment = () => obj.count++;
 </script>
 
@@ -15,6 +15,11 @@
 
   <main>
     <div>Count {{obj.count}} <button @click="increment">Add</button></div>
+    <ul>
+      <li v-for="(item, index) in obj.list" :key="index">
+        {{ item }}
+      </li>
+    </ul>
   </main>
 </template>
 
